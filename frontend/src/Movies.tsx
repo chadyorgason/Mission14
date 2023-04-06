@@ -17,6 +17,7 @@ function MovieList() {
         Director: "Tim Burton",
         Rating: "PG-13",
         Edited: "No",
+
       },
     ]);
 

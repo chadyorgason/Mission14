@@ -1,11 +1,12 @@
 import React from "react";
-import logo from "./logo.svg";
+//import logo from "./logo.svg";
 import "./App.css";
-import TopBanner from "../Blah";
+//import TopBanner from "../Blah";
 import MovieList from "../Movies";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Podcast from "../Podcast";
 import Home from "../Home";
+import MovieList1 from "../movies/MovieList";
 
 function App() {
   return (
@@ -19,11 +20,12 @@ function App() {
             }
           />
           <Route path="/podcast" element={<Podcast />} />
-          <Route path="/movies" element={<MovieList />} />
+          <Route path="/movies" element={<MovieList1 />} />
         </Routes>
       </Router>
       {/*<TopBanner saying="Home" />
       <MovieList />*/}
+      
     </div>
   );
 }

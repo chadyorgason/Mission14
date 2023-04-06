@@ -1,8 +1,8 @@
 import React from "react";
-import logo from "./logo.svg";
+//import logo from "./logo.svg";
 import "./main/App.css";
-import TopBanner from "./Blah";
-import MovieList from "./Movies";
+//import TopBanner from "./Blah";
+//import MovieList from "./Movies";
 import { Link } from "react-router-dom";
 
 function Home(props: any) {
