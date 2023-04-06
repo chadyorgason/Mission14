@@ -2,9 +2,11 @@ import { useEffect, useState } from "react";
 import { Movie } from "../types/movies";
 import { Link } from "react-router-dom";
 
+//MovieList function
 function MovieList1() {
   const [movieData, setMovieData] = useState<Movie[]>([]);
 
+  //get json from here
   useEffect (() => {
     const fetchMovies = async () => {
         const rsp = await fetch("https://localhost:4000/movie");
@@ -16,10 +18,11 @@ function MovieList1() {
   fetchMovies();
   }, []);
 
+  //links at the top and table
   return (
     <>
 
-<div>
+      <div>
         <ul className="list-group list-group-flush">
           <>
             <Link to="/" className="list-group-item">

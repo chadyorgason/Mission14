@@ -1,3 +1,4 @@
+//model for Movies coming in
 export type Movie = {
   movieId: number;
   category: string;
